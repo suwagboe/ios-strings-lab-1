@@ -14,20 +14,53 @@
 Write code that prints out all the numbers from 1 to 10 as a single string.
 (Hint: the `String()` function can convert an Int to a String)
 
+```
+let numString = (1,2,3,4,5,67,8,9,10)
+
+var numPlace = ""
+for num in 1...10 {
+    numPlace += String(num)
+    }
+print(numString)
+
+```
 ***
 ## Question 2
 
 Write code that prints out all the even numbers from 5 to 51 as a single string.
+
+```
+let evenNum = 5...51
+
+var evenString = ""
+for even in 5...51{
+evenString %2 ==0
+}
+```
 
 ***
 ## Question 3
 
 Write code that prints out every number ending in 4 between 1 and 60 as a single string.
 
+```
+let EveryNum = 1...60
+
+var EveryNum = ""
+for 
+```
 ***
 ## Question 4
 
 Print each character in the string `"Hello world!"`
+```
+var words = "Hello world!"
+
+// iterate/ looping over a string using a for-in loop
+for char in words {
+    print("character is \(char)")
+}
+```
 
 ***
 ## Question 5
@@ -35,6 +68,13 @@ Print each character in the string `"Hello world!"`
 Print out the last character in the string below.  You cannot use the Character literal "!" (i.e you must access `myStringSeven`'s characters).
 
 `let myStringSeven = "Hello world!"`
+```
+let endIndex = myStringSeven.endIndex
+let lastCharacter =
+myStringSeven.index(before : endIndex)
+let lastCharacter = myStringSeven[lastCharacterIndex]
+print("last character is \(myStringSeven)")
+```
 
 ***
 ## Question 6
@@ -58,6 +98,9 @@ Build five pairs of **canonically equivalent** strings, the first of each being 
 
 **Using only Unicode**, print out `"HELLO WORLD!"`
 
+```
+
+```
 ***
 ## Question 10
 
