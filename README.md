@@ -200,6 +200,21 @@ You are given a string stored in the variable `aString`. Create new string named
 ```swift
 var aString = "Replace the letter e with *"
 // Your code here
+
+let newChar = "*"
+func replaceLetterE (aString: String)-> String {
+    var newAString = ""
+    for char in aString{
+        if char != "e" {
+        
+            newAString.append(char)
+        } else if char == "e" {
+            newAString.append(newChar)
+        }
+    }
+    print(newAString)
+    return newAString
+}
  ```
 
 Example:
@@ -398,6 +413,7 @@ You are given a string representing an **attendance record** for a student. The 
 
 If a student has more than one 'A' or more than 2 continuous 'L's that student should not be rewarded. Print true if student is to be rewarded and False if they shouldn't.
 
+if 
 Example:
 
 Sample Input: `"PPALLP"`
