@@ -83,23 +83,50 @@ Write code that switches on a string, given the following conditions:
 - If the string's length is even, print out every character.
 - If the string's length is odd, print out every other character.
 
+```
+var str = "nkjhklij"
+if message.count % 2 == 0 { // to make sure it even
+    print(str)
+}else{
+    print("String is odd") // How do you print out everyother number
+    
+
+```
 ***
 ## Question 7
 
 Initialize a String with a character. Show that it is a Character, and not another String, that you're using to initialize it.
+
+```
+var something = String("a")
+```
 
 ***
 ## Question 8
 
 Build five pairs of **canonically equivalent** strings, the first of each being a pre-composed character and the second being one that uses combinable unicode scalars. Show that they are equivalent.
 
+```
+
+```
+
 ***
 ## Question 9
 
 **Using only Unicode**, print out `"HELLO WORLD!"`
 
-```
+```I do not know why only half is working
 
+let one =  "\u{0048}"
+let two =  "\u{0045} \u{004C}"
+let four = "\u{004C} \u{004F}"
+
+let this =     "\u{0057} \u{004F}"
+let other =    "\u{0052} \u{004C}"
+let word =    "\u{0044} \u{0021}"
+
+print("\(one)", "\(two)", "\(four)")
+print(this, other, word)
 ```
 ***
 ## Question 10
@@ -132,6 +159,20 @@ Flower Box:
 | ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
 | ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
 - - - - - - - - - - -
+```
+
+```
+var flowerBoxLineOne =  "- - - - - - - - - - - -"
+var flowerBoxLineTwo = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineThree = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineFour = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineFive = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineSix  = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineSeven = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineEight = "| \u{2698} | \u{2698} |  \u{2698} |  \u{2698} |  \u{2698} |"
+var flowerBoxLineNine = "- - - - - - - - - - - -"
+
+print(flowerBoxLineOne + "\n" + flowerBoxLineTwo + "\n" + flowerBoxLineThree + "\n" + flowerBoxLineFour + "\n" + flowerBoxLineFive + "\n" + flowerBoxLineSix + "\n" + flowerBoxLineSeven + "\n" + flowerBoxLineEight + "\n" + flowerBoxLineNine)
 ```
 
 ***
@@ -179,6 +220,9 @@ var aString = "this string has 29 characters"
 var reverse = ""
 
 // Your code here
+
+var reverse = String(aString.reveserd())
+print(reverse)
 ```
 
 Example:
@@ -193,24 +237,17 @@ Output:
 
 ```swift
 
+var geographicLocation: String = "MARS"
+var adjective1: String = "peacefully"
+var pluralNoun1: String = "patches"
+var adjective2: String = "beautifully"
+var pluralNoun2: String = "shaniya"
+var number1: Int = 423
+var number2: Int = 940
+var articleOfClothing: String = "blanket"
 
-var geographicLocation: String
-var adjective1: String
-var pluralNoun1: String
-var adjective2: String
-var pluralNoun2: String
-var number1: Int
-var number2: Int
-var articleOfClothing: String
-
-var madLib = "Here is tomorrow's weather report for \()
-and vicinity. Early tomorrow, a \()-front will
-collide with a mass of hot \() moving from the
-north. This means we can expect \() winds and
-occasional \() by late afternoon. Wind velocity will
-be \() miles an hour, and the high temperature should
-be around \() degrees. So, if you're going out, you had
-better plan on wearing your \()".
+var madLib = "Here is tomorrow's weather report for \(geographicLocation) and vicinity. Early tomorrow, a \(adjective1)-front will collide with a mass of hot \(pluralNoun1) moving from the north. This means we can expect \(adjective2) winds and occasional \(pluralNoun2) by late afternoon. Wind velocity will be \(number1) miles an hour, and the high temperature should be around \(number2) degrees. So, if you're going out, you had better plan on wearing your \(articleOfClothing)."
+print(madLib)
 ```
 
 ***
